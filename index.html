@@ -11,27 +11,71 @@
         <p>Fill in your details correctly</p>
     </header>
     <main>
+        <form action="#" method="post">
         <fieldset>
-            <legend>Personal Info</legend>
+            <legend>Personal Information</legend>
             <p>
-                <label for="name">Name:
-                    <input type="text" name="name" id="name">
+                <label for="name">Student Name:
+                    <input type="text" name="name" id="name" required>
                 </label>
             </p>
             <p>
-                <label for="email">Email:
-                    <input type="email" name="email" id="email">
-                </label>
+                <label for="email">Email Address:
+                    <input type="email" name="email" id="email" required>
             </p>
             <p>
-                <label for="phone">Phone:
-                    <input type="tel" name="phone" id="phone">
+                <label for="phone">Phone Number:
+                    <input type="tel" name="phone" id="phone" required>
                 </label>
             </p>
             <fieldset>
-                
+                <legend>Gender</legend>
+                <input type="radio" name="gender" id="male" value="male" required>
+                    <label for="male">Male</label>
+
+                    <input type="radio" name="gender" id="female" value="female" required>
+                    <label for="female">Female</label>
             </fieldset>
         </fieldset>
+
+        <fieldset>
+            <legend>Academic Information</legend>
+            <p>
+                <label for="matric-number">Matric Number:
+                    <input type="text" name="matric-number" id="matric-number" required>
+                </label>
+            </p>
+            <p>
+                <label for="department">Department:</label>
+                <select name="department" id="department" required>
+                    <option value="" disabled selected>
+                        Select your department
+                    </option>
+                    <option value="computer-science">Computer Science</option>
+                    <option value="information-technology">Information Technology</option>
+                    <option value="information-communication-technology">Information Communication Technology</option>
+                    <option value="software-engineering">Software Engineering</option>
+                    <option value="information-system">Information System</option>
+                    <option value="cyber-security">Cyber Security</option>
+                    <option value="data science">Data Science</option>
+                </select>
+            </p>
+            <p>
+                <label for="programme">Programme:</label>
+                <select name="programme" id="programme" required>
+                    <option value="" disabled selected>
+                        Select you Programme
+                    </option>
+                    <option value="full-time">Full-time</option>
+                    <option value="part-time">Part-time</option>
+                    <option value="weekly">Weekly</option>
+                </select>
+            </p>
+        </fieldset>
+        <p>
+        <button type="submit">Submit</button>
+        </p>
+        </form>
     </main>
 </body>
 </html>

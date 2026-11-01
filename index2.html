@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Registration Form</title>
+</head>
+<body style="font-family: Arial, sans-serif; background-color: #f4f7f6; color: #333; margin: 0; padding: 40px 20px;">
+
+    <header style="max-width: 600px; margin: 0 auto 20px auto; text-align: center;">
+        <h1 style="color: #0c7cec; margin-bottom: 8px;">Student Registration Form</h1>
+        <p style="color: #534a26; font-size: 14px; margin: 0;">Fill in your details correctly</p>
+    </header>
+
+    <main style="max-width: 600px; margin: 0 auto; background: #eeedeb; padding: 30px; border-radius: 8px; box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);">
+        <form action="#" method="post">
+            
+            <!-- Personal Information Section -->
+            <fieldset style="border: 1px solid #eff0f3; border-radius: 6px; padding: 20px; margin-bottom: 25px;">
+                <legend style="font-weight: bold; color: #213952; padding: 0 8px;">Personal Information</legend>
+                
+                <p style="margin-bottom: 15px;">
+                    <label for="name" style="display: block; font-weight: 600; margin-bottom: 5px;">Student Name:</label>
+                    <input type="text" name="name" id="name" required style="width: 100%; padding: 10px; border: 1px solid #a88b39; border-radius: 4px; box-sizing: border-box; font-size: 14px;">
+                </p>
+                
+                <p style="margin-bottom: 15px;">
+                    <label for="email" style="display: block; font-weight: 600; margin-bottom: 5px;">Email Address:</label>
+                    <input type="email" name="email" id="email" required style="width: 100%; padding: 10px; border: 1px solid #a88b39; border-radius: 4px; box-sizing: border-box; font-size: 14px;">
+                </p>
+                
+                <p style="margin-bottom: 15px;">
+                    <label for="phone" style="display: block; font-weight: 600; margin-bottom: 5px;">Phone Number:</label>
+                    <input type="tel" name="phone" id="phone" required style="width: 100%; padding: 10px; border: 1px solid #a88b39; border-radius: 4px; box-sizing: border-box; font-size: 14px;">
+                </p>
+
+                <fieldset style="border: 1px solid #a88b39; border-radius: 4px; padding: 12px; margin-top: 10px;">
+                    <legend style="font-size: 14px; font-weight: 600; color: #02101f; padding: 0 5px;">Gender</legend>
+                    <label style="margin-right: 15px; cursor: pointer; font-size: 14px;">
+                        <input type="radio" name="gender" id="male" value="male" required style="margin-right: 5px;"> Male
+                    </label>
+                    <label style="cursor: pointer; font-size: 14px;">
+                        <input type="radio" name="gender" id="female" value="female" required style="margin-right: 5px;"> Female
+                    </label>
+                </fieldset>
+            </fieldset>
+
+            <!-- Academic Information Section -->
+            <fieldset style="border: 1px solid #dcdde1; border-radius: 6px; padding: 20px; margin-bottom: 25px;">
+                <legend style="font-weight: bold; color: #26394b; padding: 0 8px;">Academic Information</legend>
+                
+                <p style="margin-bottom: 15px;">
+                    <label for="matric-number" style="display: block; font-weight: 600; margin-bottom: 5px;">Matric Number:</label>
+                    <input type="text" name="matric-number" id="matric-number" required style="width: 100%; padding: 10px; border: 1px solid #a88b39; border-radius: 4px; box-sizing: border-box; font-size: 14px;">
+                </p>
+                
+                <p style="margin-bottom: 15px;">
+                    <label for="department" style="display: block; font-weight: 600; margin-bottom: 5px;">Department:</label>
+                    <select name="department" id="department" required style="width: 100%; padding: 10px; border: 1px solid #a88b39; border-radius: 4px; box-sizing: border-box; font-size: 14px; background-color: #fff;">
+                        <option value="" disabled selected>Select your department</option>
+                        <option value="computer-science">Computer Science</option>
+                        <option value="information-technology">Information Technology</option>
+                        <option value="information-communication-technology">Information Communication Technology</option>
+                        <option value="software-engineering">Software Engineering</option>
+                        <option value="information-system">Information System</option>
+                        <option value="cyber-security">Cyber Security</option>
+                        <option value="data-science">Data Science</option>
+                    </select>
+                </p>
+
+                <p style="margin-bottom: 15px;">
+                    <label for="programme" style="display: block; font-weight: 600; margin-bottom: 5px;">Programme:</label>
+                    <select name="programme" id="programme" required style="width: 100%; padding: 10px; border: 1px solid #a88b39; border-radius: 4px; box-sizing: border-box; font-size: 14px; background-color: #fff;">
+                        <option value="" disabled selected>Select your Programme</option>
+                        <option value="full-time">Full-time</option>
+                        <option value="part-time">Part-time</option>
+                        <option value="weekly">Weekly</option>
+                    </select>
+                </p>
+            </fieldset>
+
+            <p style="text-align: center; margin-top: 20px;">
+                <button type="submit" style="background-color: #0c7cec; color: white; padding: 12px 30px; border: none; border-radius: 5px; font-size: 16px; font-weight: bold; cursor: pointer; transition: background-color 0.3s ease;">
+                    Submit
+                </button>
+            </p>
+        </form>
+    </main>
+</body>
+</html>
